@@ -21,15 +21,8 @@ jobs:
       - name: Download remote bash file
         run: wget https://test.crik.live/bash/tntsportsone.sh || echo "Primary URL download failed"
 
-
       - name: Install dos2unix
         run: sudo apt install dos2unix -y
-
-      - name: Install Git
-        run: sudo apt install git -y
-
-      - name: Install torsocks
-        run: sudo apt install torsocks git -y
 
       - name: Install libavcodec
         run: sudo apt install libavcodec-extra -y
