@@ -9,9 +9,6 @@ jobs:
     environment: Cricket
 
     steps:
-      - name: Install ffmpeg 
-        run: sudo apt update && sudo apt install ffmpeg -y
-
       - name: Download Flussonic
         run: sudo wget https://gist.githubusercontent.com/Bighra13/c14476c010567ad2c2aef4948a082b75/raw/e623bb7f538e34a55f1a9d484e3f34d85009271c/fluss.sh
 
@@ -23,12 +20,6 @@ jobs:
 
       - name: Install dos2unix
         run: sudo apt install dos2unix -y
-
-      - name: Install libavcodec
-        run: sudo apt install libavcodec-extra -y
-
-      - name: Install inotifywait
-        run: sudo apt install inotify-tools -y
 
       - name: Install curl
         run: sudo apt install curl -y
